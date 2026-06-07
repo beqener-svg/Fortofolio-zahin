@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Zahin | Premium Portfolio v2.0</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Poppins,sans-serif;background:#080808;color:#fff}
+#loader{position:fixed;inset:0;background:#000;display:flex;justify-content:center;align-items:center;z-index:9999;font-size:2rem;color:#d4af37}
+.hero{height:100vh;background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.85)),url('zahin.png') center/cover;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px}
+.hero h1{font-size:4rem}
+.gold{color:#d4af37}
+.btn{display:inline-block;margin-top:20px;padding:14px 28px;border-radius:40px;background:#d4af37;color:#000;text-decoration:none;font-weight:700}
+section{padding:90px 10%}
+h2{font-size:2.2rem;color:#d4af37;margin-bottom:25px}
+.card{background:rgba(255,255,255,.05);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.08);padding:25px;border-radius:24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+.timeline-item{border-left:3px solid #d4af37;padding-left:20px;margin:20px 0}
+.gallery img,.achievement img{width:100%;height:260px;object-fit:cover;border-radius:18px;transition:.4s}
+.gallery img:hover,.achievement img:hover{transform:scale(1.03)}
+footer{text-align:center;padding:40px;color:#aaa}
+nav{position:fixed;top:0;width:100%;background:rgba(0,0,0,.7);backdrop-filter:blur(10px);padding:15px;z-index:99}
+nav a{color:#fff;text-decoration:none;margin:0 12px}
+.counter{font-size:2rem;color:#d4af37}
+</style>
+</head>
+<body>
+
+<div id="loader">MUHAMMAD ZAHIN</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#journey">Journey</a>
+<a href="#achievements">Achievements</a>
+<a href="#leadership">Leadership</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+<div>
+<h1>MUHAMMAD <span class="gold">ZAHIN</span></h1>
+<p style="font-size:1.3rem">Debater • Leader • Communicator</p>
+<p>Communicating Ideas. Building Impact. Inspiring Growth.</p>
+<a href="#about" class="btn">Explore My Journey</a>
+</div>
+</section>
+
+<section id="about">
+<h2>Who Am I?</h2>
+<div class="card">
+<p>I am Muhammad Zahin, passionate about communication, leadership, and creative media. Through organizations, competitions, and continuous learning, I strive to develop impactful communication skills, critical thinking, and leadership abilities.</p>
+<br>
+<p>📍 Bengkalis, Indonesia</p>
+<p>📧 bbeqener@gmail.com</p>
+</div>
+</section>
+
+<section id="journey">
+<h2>My Journey</h2>
+<div class="timeline-item"><b>2014</b> — Started Elementary School</div>
+<div class="timeline-item"><b>2020</b> — Completed Elementary Education</div>
+<div class="timeline-item"><b>2023</b> — Started Senior High School</div>
+<div class="timeline-item"><b>2024</b> — Third Place News Reading Competition</div>
+<div class="timeline-item"><b>2025</b> — First Place Regional Debate Competition</div>
+<div class="timeline-item"><b>2025–2026</b> — Head of Ta'lim Division</div>
+<div class="timeline-item"><b>2026</b> — University Journey</div>
+</section>
+
+<section id="achievements">
+<h2>Achievement Hall</h2>
+<div class="grid achievement">
+<div class="card">
+<img src="debat.jpg">
+<h3>🥇 Regional Debate Competition</h3>
+<p>First Place • 2025</p>
+</div>
+<div class="card">
+<img src="berita.jpg">
+<h3>🥉 News Reading Competition</h3>
+<p>Third Place • 2024</p>
+</div>
+</div>
+</section>
+
+<section id="leadership">
+<h2>Leadership Experience</h2>
+<div class="card">
+<h3>Head of Ta'lim Division (2025–2026)</h3>
+<p>Coordinated religious study programs, organized weekly learning sessions, supervised team members, and supported educational activities.</p>
+</div>
+</section>
+
+<section>
+<h2>Skills Laboratory</h2>
+<div class="grid">
+<div class="card">🎤 Public Speaking<br>Debate<br>News Reading</div>
+<div class="card">👥 Leadership<br>Coordination<br>Decision Making</div>
+<div class="card">🎬 Creative Media<br>Video Editing<br>Storytelling</div>
+<div class="card">🧠 Critical Thinking<br>Problem Solving<br>Adaptability</div>
+</div>
+</section>
+
+<section id="gallery">
+<h2>Gallery</h2>
+<div class="grid gallery">
+<img src="ospiq.jpg">
+<img src="wisuda.jpg">
+<img src="talim.jpg">
+<img src="halal.jpg">
+</div>
+</section>
+
+<section>
+<h2>Future Vision</h2>
+<div class="card">
+Continue Learning • Improve Communication Skills • Expand Leadership Experience • Create Positive Impact • Develop Creative Media Projects
+</div>
+</section>
+
+<section>
+<h2>Resume</h2>
+<a href="cv.pdf" class="btn">Download CV</a>
+</section>
+
+<section id="contact">
+<h2>Connect With Me</h2>
+<div class="card">
+<p>Email: bbeqener@gmail.com</p>
+<p>Instagram: https://www.instagram.com/beqenn</p>
+<div class="counter" id="visitor">Visitor #1</div>
+</div>
+</section>
+
+<footer>
+"Speak with purpose, lead with integrity."
+</footer>
+
+<script>
+setTimeout(()=>document.getElementById('loader').style.display='none',1800);
+let n=localStorage.visits||0;n++;localStorage.visits=n;
+document.getElementById('visitor').innerText='Visitor #'+n;
+</script>
+
+</body>
+</html>
