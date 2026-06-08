@@ -1,0 +1,2018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Zahin | Portfolio </title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth; scroll-padding-top: 80px;}
+body{font-family:Poppins,sans-serif;background:#050505;color:#fff;overflow-x:hidden}
+
+/* Loader Premium */
+#loader{position:fixed;inset:0;background:#000;display:flex;justify-content:center;align-items:center;z-index:9999;font-size:2.5rem;font-weight:700;color:#d4af37;letter-spacing:5px;animation:fadeOut 0.5s ease 1.5s forwards}
+@keyframes fadeOut { to{opacity:0;visibility:hidden} }
+
+/* Navbar Adaptif */
+nav{position:fixed;top:0;width:100%;background:rgba(0,0,0,0.4);backdrop-filter:blur(15px);padding:20px;z-index:99;text-align:center;transition:all 0.4s ease;border-bottom:1px solid rgba(255,255,255,0.02)}
+nav.scrolled{padding:12px;background:rgba(5,5,5,0.95);box-shadow:0 4px 30px rgba(0,0,0,0.7);border-bottom:1px solid rgba(212,175,55,0.2)}
+nav a{color:#888;text-decoration:none;margin:0 15px;font-weight:400;transition:0.3s;font-size:0.95rem;text-transform:uppercase;letter-spacing:1px}
+nav a:hover, nav a.active{color:#d4af37;text-shadow:0 0 10px rgba(212,175,55,0.4)}
+
+/* Hero Section Sinematik */
+.hero{height:100vh;background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.95)),url('zahin.png') center/cover;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px}
+.hero h1{font-size:4.5rem;font-weight:700;letter-spacing:3px;margin-bottom:10px}
+.gold{color:#d4af37;text-shadow:0 0 25px rgba(212,175,55,0.3)}
+.hero p {max-width:600px;margin:10px auto;color:#aaa}
+
+/* Tombol Premium */
+.btn{display:inline-block;margin-top:25px;padding:14px 32px;border-radius:40px;background:#d4af37;color:#000;text-decoration:none;font-weight:700;transition:all 0.3s cubic-bezier(0.25, 1, 0.5, 1);box-shadow:0 4px 15px rgba(212,175,55,0.2)}
+.btn:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(212,175,55,0.5);background:#fff}
+
+section{padding:100px 10%;border-bottom:1px solid rgba(255,255,255,0.02)}
+h2{font-size:2.5rem;color:#d4af37;margin-bottom:40px;position:relative;display:inline-block;letter-spacing:1px}
+h2::after{content:'';position:absolute;left:0;bottom:-8px;width:60px;height:3px;background:#d4af37;border-radius:2px}
+
+/* Card Efek Glow & Gritty Border */
+.card{background:rgba(255,255,255,.02);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.05);padding:25px;border-radius:20px;transition:all 0.4s ease;overflow:hidden}
+.card:hover{transform:translateY(-5px);border-color:rgba(212,175,55,0.4);box-shadow:0 12px 40px rgba(212,175,55,0.05)}
+
+/* Grid Multi-Kolom */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}
+
+/* Timeline */
+.timeline-item{border-left:3px solid #d4af37;padding-left:25px;margin:25px 0;position:relative}
+.timeline-item::before{content:'';position:absolute;left:-8px;top:5px;width:13px;height:13px;background:#050505;border:3px solid #d4af37;border-radius:50%}
+
+/* Image Box dengan Efek Sinematik */
+.img-box{position:relative;overflow:hidden;border-radius:14px;background:#111;height:220px}
+.img-box img{width:100%;height:100%;object-fit:cover;transition:transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);filter:grayscale(20%)}
+.card:hover .img-box img{transform:scale(1.05);filter:grayscale(0%)}
+
+.skills-list {list-style:none;margin-top:10px}
+.skills-list li {margin:8px 0;color:#ccc;font-size:0.95rem}
+.skills-list li i {color:#d4af37;margin-right:8px}
+
+/* Visitor Counter */
+.counter{font-size:2.5rem;font-weight:700;color:#d4af37;margin-top:15px;font-family:monospace}
+
+/* Back to Top */
+#backToTop{position:fixed;bottom:30px;right:30px;background:#d4af37;color:#000;width:45px;height:45px;border-radius:50%;display:flex;justify-content:center;align-items:center;text-decoration:none;font-size:1.2rem;opacity:0;visibility:hidden;transition:0.3s;z-index:98}
+#backToTop.show{opacity:1;visibility:visible}
+
+footer{text-align:center;padding:50px;color:#444;font-style:italic;border-top:1px solid rgba(255,255,255,0.02);letter-spacing:1px}
+</style>
+</head>
+<body>
+
+<div id="loader">MUHAMMAD ZAHIN</div>
+
+<nav id="navbar">
+<a href="#about" class="nav-link">About</a>
+<a href="#journey" class="nav-link">Journey</a>
+<a href="#achievements" class="nav-link">Achievements</a>
+<a href="#leadership" class="nav-link">Leadership</a>
+<a href="#skills" class="nav-link">Skills</a>
+<a href="#gallery" class="nav-link">Gallery</a>
+<a href="#contact" class="nav-link">Contact</a>
+</nav>
+
+<section class="hero">
+<div>
+<h1>MUHAMMAD <span class="gold">ZAHIN</span></h1>
+<p style="font-size:1.4rem; font-weight: 300; letter-spacing: 4px;">CREATOR • LEADER • COMMUNICATOR</p>
+<p style="color:#666;">Communicating Ideas. Building Impact. Inspiring Growth.</p>
+<a href="#about" class="btn">Explore My Journey</a>
+</div>
+</section>
+
+<section id="about">
+<h2>Who Am I?</h2>
+<div class="card">
+<p style="line-height:1.8; color:#ddd; font-size:1.05rem">I am Muhammad Zahin, passionate about communication, leadership, and creative media. Through organizations, competitions, and continuous learning, I strive to develop impactful communication skills, critical thinking, and leadership abilities.</p>
+<br>
+<p style="color:#ccc"><i class="fa-solid fa-location-dot gold" style="margin-right:10px"></i> Bengkalis, Riau, Indonesia</p>
+<p style="color:#ccc; margin-top:5px;"><i class="fa-solid fa-envelope gold" style="margin-right:10px"></i> beqener@gmail.com</p>
+</div>
+</section>
+
+<section id="journey">
+<h2>My Journey</h2>
+<div class="timeline-item"><b>2014-2020</b> — SDN 05 RUPAT UTARA</div>
+<div class="timeline-item"><b>2020-2023</b> — MTsS Ibadusshalihin Dumai</div>
+<div class="timeline-item"><b>2023-2026</b> — SMAS BeQuranic Bengkalis</div>
+<div class="timeline-item"><b>2026</b> — University Journey</div>
+<div class="timeline-item"><b>202x</b> — Coming Soon</div>
+
+</section>
+
+<section id="achievements">
+<h2>Achievement Hall</h2>
+<div class="grid">
+    
+    <div class="card">
+        <div class="img-box"><img src="debat.jpg" alt="Debate"></div>
+        <h3 style="margin-top:15px">🥇 Regional Debate Competition</h3>
+        <p style="color:#aaa; font-size:0.9rem; margin-top:5px">First Place • 2025</p>
+    </div>
+    
+    <div class="card">
+        <div class="img-box"><img src="berita.jpg" alt="News Reading"></div>
+        <h3 style="margin-top:15px">🥉 News Reading Competition</h3>
+        <p style="color:#aaa; font-size:0.9rem; margin-top:5px">Third Place • 2024</p>
+    </div>
+
+    <div class="card">
+        <div class="img-box"><img src="baik.jpg" alt="Competition"></div>
+        <h3 style="margin-top:15px">🏆 Best student awards</h3>
+        <p style="color:#aaa; font-size:0.9rem; margin-top:5px">valedictorian 12 • 2023</p>
+    </div>
+
+    <div class="card">
+        <div class="img-box"><img src="ultraman.png" alt="Competition"></div>
+        <h3 style="margin-top:15px">✨ the Guardian of humanity</h3>
+        <p style="color:#aaa; font-size:0.9rem; margin-top:5px">The chosen one</p>
+    </div>
+
+</div>
+</section>
+
+<section id="leadership">
+<h2>Leadership & Organizations</h2>
+<div class="grid">
+
+    <div class="card">
+        <div class="img-box"><img src="talim.jpg" alt="Ta'lim Division"></div>
+        <h3 class="gold" style="margin-top:15px">Head of Ta'lim Division</h3>
+        <p style="color:#aaa; font-size:0.85rem; margin-bottom:10px">Periode 2025–2026</p>
+        <p style="line-height:1.6; color:#ccc; font-size:0.9rem">Coordinated religious study programs, organized weekly learning sessions, supervised team members, and supported educational activities.</p>
+    </div>
+
+    <div class="card">
+        <div class="img-box"><img src="osis.jpg" alt="Student Council"></div>
+        <h3 class="gold" style="margin-top:15px">Student Committee / Council</h3>
+        <p style="color:#aaa; font-size:0.85rem; margin-bottom:10px">Periode 2024–2025</p>
+        <p style="line-height:1.6; color:#ccc; font-size:0.9rem">Actively involved in managing student-led events, developing school programs, and bridging communication between students and faculty.</p>
+    </div>
+
+    <div class="card">
+        <div class="img-box"><img src="media_team.jpg" alt="Creative Media"></div>
+        <h3 class="gold" style="margin-top:15px">Creative Media & Documentation</h3>
+        <p style="color:#aaa; font-size:0.85rem; margin-bottom:10px">Event Lead Photographer</p>
+        <p style="line-height:1.6; color:#ccc; font-size:0.9rem">Led production, visual layouts, and content coordination for official organization activities and large-scale student gatherings.</p>
+    </div>
+
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills Laboratory</h2>
+<div class="grid">
+<div class="card">
+<h3 class="gold"><i class="fa-solid fa-microphone"></i> Public Speaking</h3>
+<ul class="skills-list">
+<li><i class="fa-solid fa-check"></i> Debate & Argumentation</li>
+<li><i class="fa-solid fa-check"></i> News Reading & Anchoring</li>
+</ul>
+</div>
+<div class="card">
+<h3 class="gold"><i class="fa-solid fa-users"></i> Leadership</h3>
+<ul class="skills-list">
+<li><i class="fa-solid fa-check"></i> Team Coordination</li>
+<li><i class="fa-solid fa-check"></i> Strategic Decision Making</li>
+</ul>
+</div>
+<div class="card">
+<h3 class="gold"><i class="fa-solid fa-clapperboard"></i> Creative Media</h3>
+<ul class="skills-list">
+<li><i class="fa-solid fa-check"></i> Video Editing & Composition</li>
+<li><i class="fa-solid fa-check"></i> Visual Storytelling</li>
+</ul>
+</div>
+<div class="card">
+<h3 class="gold"><i class="fa-solid fa-brain"></i> Critical Thinking</h3>
+<ul class="skills-list">
+<li><i class="fa-solid fa-check"></i> Problem Solving under pressure</li>
+<li><i class="fa-solid fa-check"></i> Adaptability & Agility</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="gallery">
+<h2>Visual Archives</h2>
+<div class="grid gallery">
+<div class="img-box"><img src="ospiq.jpg"></div>
+<div class="img-box"><img src="wisuda.jpg"></div>
+<div class="img-box"><img src="talim.jpg"></div>
+<div class="img-box"><img src="lari.jpg"></div>
+<div class="img-box"><img src="baik.jpg"></div>
+<div class="img-box"><img src="debat.jpg"></div>
+</div>
+<!-- ========================= -->
+<!-- ABOUT / WHO AM I -->
+<!-- ========================= -->
+
+<section id="about">
+
+<h2 class="section-title reveal">
+Who Am I
+</h2>
+
+<div class="glass reveal">
+
+<h3 style="color:var(--gold);margin-bottom:20px;">
+Muhammad Zahin
+</h3>
+
+<p style="line-height:1.9;color:#ddd;">
+
+A motivated and disciplined student with a strong interest in communication,
+leadership, and creative media.
+
+Experienced in organizational activities, event documentation,
+public speaking, and team management.
+
+Passionate about continuous learning, youth empowerment,
+and creating positive impact through effective communication.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- FOUNDER DASHBOARD -->
+<!-- ========================= -->
+
+<section>
+
+<h2 class="section-title reveal">
+Founder Dashboard
+</h2>
+
+<div class="dashboard-grid">
+
+<div class="glass stat-card reveal">
+
+<h3 id="achievementCounter">
+0
+</h3>
+
+<p>Achievements</p>
+
+</div>
+
+<div class="glass stat-card reveal">
+
+<h3 id="leadershipCounter">
+0
+</h3>
+
+<p>Leadership Roles</p>
+
+</div>
+
+<div class="glass stat-card reveal">
+
+<h3 id="storiesCounter">
+0
+</h3>
+
+<p>Stories Published</p>
+
+</div>
+
+<div class="glass stat-card reveal">
+
+<h3 id="learningCounter">
+0
+</h3>
+
+<p>Years Learning</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- DIGITAL DNA -->
+<!-- ========================= -->
+
+<section id="dna">
+
+<h2 class="section-title reveal">
+Digital DNA
+</h2>
+
+<div class="glass reveal">
+
+<div class="skill">
+
+<div class="skill-header">
+<span>Communication</span>
+<span>95%</span>
+</div>
+
+<div class="skill-bar">
+<div class="skill-fill" data-width="95%"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<div class="skill-header">
+<span>Leadership</span>
+<span>90%</span>
+</div>
+
+<div class="skill-bar">
+<div class="skill-fill" data-width="90%"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<div class="skill-header">
+<span>Critical Thinking</span>
+<span>90%</span>
+</div>
+
+<div class="skill-bar">
+<div class="skill-fill" data-width="90%"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<div class="skill-header">
+<span>Creativity</span>
+<span>85%</span>
+</div>
+
+<div class="skill-bar">
+<div class="skill-fill" data-width="85%"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<div class="skill-header">
+<span>Teamwork</span>
+<span>92%</span>
+</div>
+
+<div class="skill-bar">
+<div class="skill-fill" data-width="92%"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<div class="skill-header">
+<span>Discipline</span>
+<span>88%</span>
+</div>
+
+<div class="skill-bar">
+<div class="skill-fill" data-width="88%"></div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- ACHIEVEMENT STATS -->
+<!-- ========================= -->
+
+<section>
+
+<h2 class="section-title reveal">
+Achievement Statistics
+</h2>
+
+<div class="achievement-stats">
+
+<div class="glass stat-card reveal">
+<h3>🥇</h3>
+<p>Regional Debate Champion</p>
+</div>
+
+<div class="glass stat-card reveal">
+<h3>📰</h3>
+<p>News Reading Award</p>
+</div>
+
+<div class="glass stat-card reveal">
+<h3>👑</h3>
+<p>Leadership Experience</p>
+</div>
+
+<div class="glass stat-card reveal">
+<h3>🎤</h3>
+<p>Public Speaking</p>
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+/* DASHBOARD */
+
+.dashboard-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.stat-card{
+text-align:center;
+padding:35px;
+transition:.4s;
+}
+
+.stat-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px rgba(212,175,55,.25);
+}
+
+.stat-card h3{
+font-size:2.5rem;
+color:var(--gold);
+margin-bottom:10px;
+}
+
+/* DIGITAL DNA */
+
+.skill{
+margin-bottom:25px;
+}
+
+.skill-header{
+display:flex;
+justify-content:space-between;
+margin-bottom:10px;
+}
+
+.skill-bar{
+height:12px;
+background:#111;
+border-radius:50px;
+overflow:hidden;
+}
+
+.skill-fill{
+width:0;
+height:100%;
+border-radius:50px;
+background:
+linear-gradient(
+90deg,
+#8b6f00,
+#d4af37,
+#fff0a5
+);
+transition:2s;
+}
+
+/* ACHIEVEMENT STATS */
+
+.achievement-stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+</style>
+
+<script>
+
+/* REVEAL */
+
+const reveals=document.querySelectorAll('.reveal');
+
+function revealScroll(){
+
+reveals.forEach(item=>{
+
+const top=item.getBoundingClientRect().top;
+
+if(top<window.innerHeight-100){
+
+item.classList.add('active');
+
+}
+
+});
+
+}
+
+window.addEventListener('scroll',revealScroll);
+revealScroll();
+
+/* COUNTER */
+
+function animateCounter(id,target){
+
+let count=0;
+
+const el=document.getElementById(id);
+
+const speed=target/80;
+
+const timer=setInterval(()=>{
+
+count+=speed;
+
+if(count>=target){
+
+count=target;
+clearInterval(timer);
+
+}
+
+el.innerText=Math.floor(count);
+
+},20);
+
+}
+
+animateCounter("achievementCounter",2);
+animateCounter("leadershipCounter",1);
+animateCounter("storiesCounter",6);
+animateCounter("learningCounter",12);
+
+/* SKILL BARS */
+
+const skillBars=document.querySelectorAll('.skill-fill');
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.style.width=
+entry.target.getAttribute('data-width');
+
+}
+
+});
+
+});
+
+skillBars.forEach(bar=>{
+
+observer.observe(bar);
+
+});
+
+</script>
+<!-- ========================= -->
+<!-- MY JOURNEY -->
+<!-- ========================= -->
+
+<section id="journey">
+
+<h2 class="section-title reveal">
+My Journey
+</h2>
+
+<div class="timeline">
+
+<div class="timeline-item reveal">
+<div class="timeline-year">2014</div>
+<div class="glass">
+<h3>Started Elementary School</h3>
+<p>The beginning of an educational journey filled with learning and growth.</p>
+</div>
+</div>
+
+<div class="timeline-item reveal">
+<div class="timeline-year">2020</div>
+<div class="glass">
+<h3>Completed Elementary Education</h3>
+<p>Successfully completed primary education and prepared for the next stage.</p>
+</div>
+</div>
+
+<div class="timeline-item reveal">
+<div class="timeline-year">2023</div>
+<div class="glass">
+<h3>Started Senior High School</h3>
+<p>Began developing leadership, communication, and organizational skills.</p>
+</div>
+</div>
+
+<div class="timeline-item reveal">
+<div class="timeline-year">2024</div>
+<div class="glass">
+<h3>News Reading Competition</h3>
+<p>Achieved Third Place and improved public speaking abilities.</p>
+</div>
+</div>
+
+<div class="timeline-item reveal">
+<div class="timeline-year">2025</div>
+<div class="glass">
+<h3>Regional Debate Champion</h3>
+<p>Won First Place in a regional debate competition.</p>
+</div>
+</div>
+
+<div class="timeline-item reveal">
+<div class="timeline-year">2025–2026</div>
+<div class="glass">
+<h3>Head of Ta'lim Division</h3>
+<p>Led educational and religious programs while managing organizational activities.</p>
+</div>
+</div>
+
+<div class="timeline-item reveal">
+<div class="timeline-year">2026</div>
+<div class="glass">
+<h3>University Journey</h3>
+<p>Starting a new chapter focused on growth and future impact.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- ACHIEVEMENT HALL -->
+<!-- ========================= -->
+
+<section id="achievement">
+
+<h2 class="section-title reveal">
+Achievement Hall
+</h2>
+
+<div class="gallery-grid">
+
+<a href="debate.html" class="achievement-card reveal">
+
+<img src="debat.jpg" alt="Debate">
+
+<div class="overlay">
+<h3>🥇 First Place</h3>
+<p>Regional Debate Competition 2025</p>
+<span>Read Story →</span>
+</div>
+
+</a>
+
+<a href="news-reading.html" class="achievement-card reveal">
+
+<img src="berita.jpg" alt="News Reading">
+
+<div class="overlay">
+<h3>🥉 Third Place</h3>
+<p>News Reading Competition 2024</p>
+<span>Read Story →</span>
+</div>
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- LEADERSHIP EXPERIENCE -->
+<!-- ========================= -->
+
+<section>
+
+<h2 class="section-title reveal">
+Leadership Experience
+</h2>
+
+<div class="glass reveal">
+
+<h3 style="color:var(--gold);margin-bottom:20px;">
+Head of Ta'lim Division
+</h3>
+
+<ul class="leader-list">
+
+<li>Coordinated religious study programs</li>
+
+<li>Organized weekly learning sessions</li>
+
+<li>Supervised team members</li>
+
+<li>Supported educational activities</li>
+
+<li>Helped improve organizational effectiveness</li>
+
+<li>Developed leadership and communication skills</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- ACTIVITY SHOWCASE -->
+<!-- ========================= -->
+
+<section>
+
+<h2 class="section-title reveal">
+Activity Showcase
+</h2>
+
+<div class="gallery-grid">
+
+<div class="activity-card reveal">
+<img src="mc.jpg">
+<div class="activity-info">
+<h3>🎤 MC Experience</h3>
+<p>Hosting and managing events with confidence.</p>
+</div>
+</div>
+
+<div class="activity-card reveal">
+<img src="guru.jpg">
+<div class="activity-info">
+<h3>📚 Teaching Experience</h3>
+<p>Sharing knowledge and guiding others.</p>
+</div>
+</div>
+
+<div class="activity-card reveal">
+<img src="ceramah.jpg">
+<div class="activity-info">
+<h3>🎙 Public Speaking</h3>
+<p>Delivering messages effectively and confidently.</p>
+</div>
+</div>
+
+<div class="activity-card reveal">
+<img src="editor.jpg">
+<div class="activity-info">
+<h3>🎬 Creative Media</h3>
+<p>Content editing and digital creativity.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+/* TIMELINE */
+
+.timeline{
+position:relative;
+margin-top:50px;
+}
+
+.timeline::before{
+content:'';
+position:absolute;
+left:25px;
+top:0;
+bottom:0;
+width:4px;
+background:var(--gold);
+}
+
+.timeline-item{
+position:relative;
+padding-left:80px;
+margin-bottom:40px;
+}
+
+.timeline-year{
+position:absolute;
+left:0;
+top:15px;
+width:50px;
+height:50px;
+background:var(--gold);
+color:black;
+font-weight:700;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:12px;
+}
+
+/* GALLERY GRID */
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+/* ACHIEVEMENT */
+
+.achievement-card{
+position:relative;
+overflow:hidden;
+border-radius:25px;
+text-decoration:none;
+color:white;
+}
+
+.achievement-card img{
+width:100%;
+height:350px;
+object-fit:cover;
+transition:.5s;
+}
+
+.achievement-card:hover img{
+transform:scale(1.1);
+}
+
+.overlay{
+position:absolute;
+inset:0;
+background:linear-gradient(
+to top,
+rgba(0,0,0,.95),
+rgba(0,0,0,.1)
+);
+display:flex;
+flex-direction:column;
+justify-content:flex-end;
+padding:25px;
+}
+
+.overlay h3{
+color:var(--gold);
+margin-bottom:10px;
+}
+
+.overlay span{
+margin-top:10px;
+font-weight:600;
+color:var(--gold);
+}
+
+/* LEADERSHIP */
+
+.leader-list{
+line-height:2;
+padding-left:20px;
+color:#ddd;
+}
+
+/* ACTIVITY */
+
+.activity-card{
+background:var(--card);
+border:1px solid var(--border);
+border-radius:25px;
+overflow:hidden;
+transition:.4s;
+}
+
+.activity-card:hover{
+transform:translateY(-12px);
+box-shadow:0 0 25px rgba(212,175,55,.25);
+}
+
+.activity-card img{
+width:100%;
+height:260px;
+object-fit:cover;
+}
+
+.activity-info{
+padding:20px;
+}
+
+.activity-info h3{
+color:var(--gold);
+margin-bottom:10px;
+}
+
+</style>
+<!-- ========================= -->
+<!-- GALLERY SHOWCASE -->
+<!-- ========================= -->
+
+<section id="gallery">
+
+<h2 class="section-title reveal">
+Gallery Showcase
+</h2>
+
+<div class="gallery-grid">
+
+<div class="gallery-item reveal">
+<img src="ospiq.jpg" alt="">
+<div class="gallery-overlay">
+<h3>OSPIQ</h3>
+<p>View Story →</p>
+</div>
+</div>
+
+<div class="gallery-item reveal">
+<img src="wisuda.jpg" alt="">
+<div class="gallery-overlay">
+<h3>Graduation</h3>
+<p>View Story →</p>
+</div>
+</div>
+
+<div class="gallery-item reveal">
+<img src="talim.JPG" alt="">
+<div class="gallery-overlay">
+<h3>Ta'lim Division</h3>
+<p>View Story →</p>
+</div>
+</div>
+
+<div class="gallery-item reveal">
+<img src="baik.jpg" alt="">
+<div class="gallery-overlay">
+<h3>Character Building</h3>
+<p>View Story →</p>
+</div>
+</div>
+
+<div class="gallery-item reveal">
+<img src="lari.jpg" alt="">
+<div class="gallery-overlay">
+<h3>Endurance Training</h3>
+<p>View Story →</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- LIFE MAP -->
+<!-- ========================= -->
+
+<section>
+
+<h2 class="section-title reveal">
+Life Map
+</h2>
+
+<div class="life-map glass reveal">
+
+<div class="life-step">
+📍 Rupat Utara
+</div>
+
+<div class="arrow">
+↓
+</div>
+
+<div class="life-step">
+📍 Bengkalis
+</div>
+
+<div class="arrow">
+↓
+</div>
+
+<div class="life-step">
+🎓 University
+</div>
+
+<div class="arrow">
+↓
+</div>
+
+<div class="life-step gold-text">
+🚀 Future
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- PUBLIC SPEAKING WALL -->
+<!-- ========================= -->
+
+<section>
+
+<h2 class="section-title reveal">
+Public Speaking Wall
+</h2>
+
+<div class="quote-box glass reveal">
+
+<div id="quoteRotator">
+
+Words have power when used with purpose.
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- FUTURE VISION -->
+<!-- ========================= -->
+
+<section>
+
+<h2 class="section-title reveal">
+Future Vision
+</h2>
+
+<div class="vision-grid">
+
+<div class="glass vision-card reveal">
+✓ Continue Learning
+</div>
+
+<div class="glass vision-card reveal">
+✓ Improve Communication Skills
+</div>
+
+<div class="glass vision-card reveal">
+✓ Expand Leadership Experience
+</div>
+
+<div class="glass vision-card reveal">
+✓ Create Positive Impact
+</div>
+
+<div class="glass vision-card reveal">
+✓ Develop Creative Media Projects
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- LIGHTBOX -->
+<!-- ========================= -->
+
+<div class="lightbox" id="lightbox">
+
+<span class="close-lightbox" id="closeLightbox">
+✕
+</span>
+
+<img id="lightboxImage" src="">
+
+</div>
+
+<style>
+
+/* GALLERY */
+
+.gallery-item{
+position:relative;
+overflow:hidden;
+border-radius:25px;
+cursor:pointer;
+}
+
+.gallery-item img{
+width:100%;
+height:320px;
+object-fit:cover;
+transition:.6s;
+}
+
+.gallery-item:hover img{
+transform:scale(1.1);
+}
+
+.gallery-overlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.55);
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+opacity:0;
+transition:.4s;
+}
+
+.gallery-item:hover .gallery-overlay{
+opacity:1;
+}
+
+.gallery-overlay h3{
+color:var(--gold);
+margin-bottom:10px;
+}
+
+/* LIFE MAP */
+
+.life-map{
+text-align:center;
+font-size:1.2rem;
+}
+
+.life-step{
+padding:15px;
+font-weight:600;
+}
+
+.arrow{
+font-size:2rem;
+color:var(--gold);
+animation:floatArrow 2s infinite;
+}
+
+@keyframes floatArrow{
+
+0%,100%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(8px);
+}
+
+}
+
+.gold-text{
+color:var(--gold);
+}
+
+/* QUOTE */
+
+.quote-box{
+text-align:center;
+font-size:1.5rem;
+font-weight:600;
+min-height:150px;
+display:flex;
+justify-content:center;
+align-items:center;
+color:var(--gold);
+}
+
+/* FUTURE */
+
+.vision-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.vision-card{
+font-size:1.1rem;
+font-weight:600;
+transition:.4s;
+}
+
+.vision-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px rgba(212,175,55,.3);
+}
+
+/* LIGHTBOX */
+
+.lightbox{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.95);
+display:none;
+justify-content:center;
+align-items:center;
+z-index:99999;
+backdrop-filter:blur(10px);
+}
+
+.lightbox img{
+max-width:90%;
+max-height:85%;
+border-radius:20px;
+}
+
+.close-lightbox{
+position:absolute;
+top:30px;
+right:40px;
+font-size:2rem;
+cursor:pointer;
+color:white;
+}
+
+</style>
+
+<script>
+
+/* QUOTE ROTATOR */
+
+const quotes=[
+
+"Words have power when used with purpose.",
+
+"Leadership begins with responsibility.",
+
+"Communication creates impact."
+
+];
+
+let quoteIndex=0;
+
+setInterval(()=>{
+
+quoteIndex++;
+
+if(quoteIndex>=quotes.length){
+
+quoteIndex=0;
+
+}
+
+document.getElementById("quoteRotator").innerText=
+quotes[quoteIndex];
+
+},4000);
+
+/* LIGHTBOX */
+
+const galleryImages=
+document.querySelectorAll(".gallery-item img");
+
+const lightbox=
+document.getElementById("lightbox");
+
+const lightboxImage=
+document.getElementById("lightboxImage");
+
+galleryImages.forEach(img=>{
+
+img.addEventListener("click",()=>{
+
+lightbox.style.display="flex";
+
+lightboxImage.src=img.src;
+
+});
+
+});
+
+document.getElementById("closeLightbox")
+.addEventListener("click",()=>{
+
+lightbox.style.display="none";
+
+});
+
+lightbox.addEventListener("click",(e)=>{
+
+if(e.target===lightbox){
+
+lightbox.style.display="none";
+
+}
+
+});
+
+</script>
+<!-- ========================= -->
+<!-- SUPPORT MY JOURNEY -->
+<!-- ========================= -->
+
+<section id="support">
+
+<h2 class="section-title reveal">
+Support My Journey
+</h2>
+
+<div class="support-grid">
+
+<div class="glass reveal">
+
+<h3 style="color:var(--gold);margin-bottom:15px;">
+DANA
+</h3>
+
+<p id="danaNumber">
+081378597056
+</p>
+
+<p>
+Muhammad Zahin
+</p>
+
+<button class="copy-btn" onclick="copyDana()">
+Copy DANA Number
+</button>
+
+</div>
+
+<div class="glass reveal">
+
+<h3 style="color:var(--gold);margin-bottom:15px;">
+Bank BRK
+</h3>
+
+<p id="bankNumber">
+2003101111
+</p>
+
+<p>
+Muhammad Zahin
+</p>
+
+<button class="copy-btn" onclick="copyBank()">
+Copy Account Number
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- CONTACT -->
+<!-- ========================= -->
+
+<section id="contact">
+
+<h2 class="section-title reveal">
+Connect With Me
+</h2>
+
+<div class="contact-grid">
+
+<a href="https://wa.me/6281378597056"
+target="_blank"
+class="social-card glass reveal">
+📱 WhatsApp
+</a>
+
+<a href="https://www.instagram.com/beqenn/"
+target="_blank"
+class="social-card glass reveal">
+📸 Instagram
+</a>
+
+<a href="https://www.tiktok.com/@beqenn"
+target="_blank"
+class="social-card glass reveal">
+🎵 TikTok
+</a>
+
+<a href="https://www.linkedin.com/in/beqen-media-0270b53b4"
+target="_blank"
+class="social-card glass reveal">
+💼 LinkedIn
+</a>
+
+<a href="mailto:bbeqener@gmail.com"
+class="social-card glass reveal">
+✉ Email
+</a>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- GUESTBOOK -->
+<!-- ========================= -->
+
+<section>
+
+<h2 class="section-title reveal">
+Guest Book
+</h2>
+
+<div class="glass reveal">
+
+<input
+id="guestName"
+placeholder="Your Name"
+class="guest-input">
+
+<textarea
+id="guestMessage"
+placeholder="Leave a message..."
+class="guest-input"
+rows="4"></textarea>
+
+<button
+class="copy-btn"
+onclick="saveGuestBook()">
+
+Submit Message
+
+</button>
+
+<div id="guestMessages">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- VISITOR COUNTER -->
+<!-- ========================= -->
+
+<section>
+
+<h2 class="section-title reveal">
+Visitor Counter
+</h2>
+
+<div class="glass reveal"
+style="text-align:center;">
+
+<h1 id="visitorCounter"
+style="color:var(--gold);font-size:4rem;">
+001
+</h1>
+
+<p>
+Portfolio Visitors
+</p>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- SECRET ROOM -->
+<!-- ========================= -->
+
+<div id="secretModal">
+
+<div class="secret-content">
+
+<h2>
+🏆 Achievement Unlocked
+</h2>
+
+<p>
+Welcome To Secret Room
+</p>
+
+<p>
+You Found The Hidden Feature
+</p>
+
+<button onclick="closeSecret()">
+Close
+</button>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<footer>
+
+<h2>
+MUHAMMAD ZAHIN
+</h2>
+
+<p>
+Debater • Leader • Communicator
+</p>
+
+<p>
+Bengkalis, Indonesia
+</p>
+
+<br>
+
+<p style="color:var(--gold);">
+"Speak with purpose, lead with integrity."
+</p>
+
+<br>
+
+<p>
+© 2026 All Rights Reserved
+</p>
+
+</footer>
+
+<style>
+
+/* SUPPORT */
+
+.support-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.copy-btn{
+margin-top:20px;
+padding:12px 20px;
+border:none;
+border-radius:50px;
+background:var(--gold);
+color:black;
+font-weight:600;
+cursor:pointer;
+}
+
+/* CONTACT */
+
+.contact-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.social-card{
+text-decoration:none;
+color:white;
+text-align:center;
+font-weight:600;
+transition:.4s;
+}
+
+.social-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px rgba(212,175,55,.3);
+}
+
+/* GUESTBOOK */
+
+.guest-input{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:none;
+border-radius:15px;
+background:#111;
+color:white;
+}
+
+#guestMessages{
+margin-top:30px;
+}
+
+.guest-item{
+padding:15px;
+margin-top:10px;
+background:#111;
+border-radius:15px;
+}
+
+/* FOOTER */
+
+footer{
+padding:80px 10%;
+text-align:center;
+background:black;
+}
+
+/* SECRET */
+
+#secretModal{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+display:none;
+justify-content:center;
+align-items:center;
+background:rgba(0,0,0,.9);
+z-index:999999;
+}
+
+.secret-content{
+background:#111;
+padding:40px;
+border-radius:25px;
+text-align:center;
+border:1px solid var(--gold);
+box-shadow:0 0 30px rgba(212,175,55,.3);
+}
+
+.secret-content h2{
+color:var(--gold);
+margin-bottom:15px;
+}
+
+.secret-content button{
+margin-top:20px;
+padding:12px 20px;
+border:none;
+background:var(--gold);
+border-radius:50px;
+cursor:pointer;
+}
+
+</style>
+
+<script>
+
+/* LOADER */
+
+const loadingTexts=[
+"Initializing Portfolio...",
+"Loading Leadership Data...",
+"Loading Achievement Records...",
+"Loading Media Assets...",
+"Preparing Experience...",
+"Access Granted"
+];
+
+let loadIndex=0;
+
+const loadingText=
+document.getElementById("loadingText");
+
+const loadInterval=setInterval(()=>{
+
+loadIndex++;
+
+if(loadIndex<loadingTexts.length){
+
+loadingText.innerText=
+loadingTexts[loadIndex];
+
+}
+
+},500);
+
+setTimeout(()=>{
+
+document.getElementById("loader")
+.style.display="none";
+
+clearInterval(loadInterval);
+
+},3000);
+
+/* TYPING */
+
+const typingWords=[
+"Debater",
+"Leader",
+"Communicator",
+"Creative Thinker",
+"Public Speaker"
+];
+
+let wordIndex=0;
+
+setInterval(()=>{
+
+document.getElementById("typing")
+.innerText=
+typingWords[wordIndex];
+
+wordIndex++;
+
+if(wordIndex>=typingWords.length){
+
+wordIndex=0;
+
+}
+
+},2000);
+
+/* NAVBAR */
+
+window.addEventListener("scroll",()=>{
+
+const nav=document.getElementById("navbar");
+
+if(window.scrollY>50){
+
+nav.classList.add("scrolled");
+
+}else{
+
+nav.classList.remove("scrolled");
+
+}
+
+});
+
+/* COPY */
+
+function copyDana(){
+
+navigator.clipboard.writeText(
+"081378597056"
+);
+
+alert("DANA copied!");
+
+}
+
+function copyBank(){
+
+navigator.clipboard.writeText(
+"2003101111"
+);
+
+alert("Bank account copied!");
+
+}
+
+/* VISITOR */
+
+let visits=
+localStorage.getItem("mz_visits");
+
+if(!visits){
+
+visits=1;
+
+}else{
+
+visits=parseInt(visits)+1;
+
+}
+
+localStorage.setItem(
+"mz_visits",
+visits
+);
+
+document.getElementById(
+"visitorCounter"
+).innerText=
+String(visits).padStart(3,"0");
+
+/* GUESTBOOK */
+
+function saveGuestBook(){
+
+const name=
+document.getElementById(
+"guestName"
+).value;
+
+const message=
+document.getElementById(
+"guestMessage"
+).value;
+
+if(!name || !message){
+
+return;
+
+}
+
+const data=
+JSON.parse(
+localStorage.getItem(
+"guestbook"
+) || "[]"
+);
+
+data.unshift({
+name,
+message
+});
+
+localStorage.setItem(
+"guestbook",
+JSON.stringify(data)
+);
+
+loadGuestBook();
+
+document.getElementById(
+"guestName"
+).value="";
+
+document.getElementById(
+"guestMessage"
+).value="";
+
+}
+
+function loadGuestBook(){
+
+const container=
+document.getElementById(
+"guestMessages"
+);
+
+container.innerHTML="";
+
+const data=
+JSON.parse(
+localStorage.getItem(
+"guestbook"
+)||"[]"
+);
+
+data.forEach(item=>{
+
+container.innerHTML+=`
+
+<div class="guest-item">
+
+<strong>${item.name}</strong>
+
+<p>${item.message}</p>
+
+</div>
+
+`;
+
+});
+
+}
+
+loadGuestBook();
+
+/* SECRET EGG */
+
+let secret="";
+
+document.addEventListener(
+"keydown",
+e=>{
+
+secret+=e.key.toLowerCase();
+
+if(
+secret.includes("beqen")
+||
+secret.includes("zahin")
+){
+
+document.getElementById(
+"secretModal"
+).style.display="flex";
+
+secret="";
+
+}
+
+if(secret.length>20){
+
+secret="";
+
+}
+
+});
+
+function closeSecret(){
+
+document.getElementById(
+"secretModal"
+).style.display="none";
+
+}
+
+/* CURSOR */
+
+const cursor=
+document.querySelector(".cursor");
+
+document.addEventListener(
+"mousemove",
+e=>{
+
+cursor.style.left=e.clientX+"px";
+cursor.style.top=e.clientY+"px";
+
+});
+
+document.querySelectorAll(
+"a,button,.gallery-item,.activity-card"
+).forEach(el=>{
+
+el.addEventListener(
+"mouseenter",
+()=>{
+
+cursor.classList.add(
+"cursor-grow"
+);
+
+});
+
+el.addEventListener(
+"mouseleave",
+()=>{
+
+cursor.classList.remove(
+"cursor-grow"
+);
+
+});
+
+});
+
+/* PARTICLES */
+
+const canvas=
+document.getElementById("particles");
+
+const ctx=
+canvas.getContext("2d");
+
+canvas.width=
+window.innerWidth;
+
+canvas.height=
+window.innerHeight;
+
+let particles=[];
+
+for(let i=0;i<80;i++){
+
+particles.push({
+
+x:Math.random()*canvas.width,
+
+y:Math.random()*canvas.height,
+
+r:Math.random()*2+1,
+
+s:Math.random()*1+0.2
+
+});
+
+}
+
+function animateParticles(){
+
+ctx.clearRect(
+0,
+0,
+canvas.width,
+canvas.height
+);
+
+ctx.fillStyle=
+"rgba(212,175,55,.7)";
+
+particles.forEach(p=>{
+
+ctx.beginPath();
+
+ctx.arc(
+p.x,
+p.y,
+p.r,
+0,
+Math.PI*2
+);
+
+ctx.fill();
+
+p.y+=p.s;
+
+if(p.y>canvas.height){
+
+p.y=0;
+
+}
+
+});
+
+requestAnimationFrame(
+animateParticles
+);
+
+}
+
+animateParticles();
+
+</script>
+
+</body>
+</html>
